@@ -7,7 +7,9 @@
     "watch": "npx tsc -w",
     "prestart": "npm run build",
     "start": "npx nodemon dist/index.js",
-    "dev": "npx concurrently --kill-others \"npm run watch\" \"npm start\""
+    "dev": "npx concurrently --kill-others \"npm run watch\" \"npm start\"",
+    "lint": "npx eslint ./src/**/*.ts",
+    "format": "npx eslint ./src/**/*.ts --fix"
   },
   "keywords": [],
   "author": "Deepak Barwal",
