@@ -1,8 +1,9 @@
-import express from "express";
-import v1Router from "./v1";
+import express from 'express'
 
-const apiRouter = express.Router();
+import v1Router from './v1'
 
-apiRouter.use("/v1", v1Router);
+const apiRouter = express.Router()
 
-export default apiRouter;
+apiRouter.use('/v1', v1Router)
+
+export default apiRouter

@@ -1,8 +1,9 @@
-import express from "express";
-import { pingCheck } from "../../controllers/pingController";
+import express from 'express'
 
-const v1Router = express.Router();
+import { pingCheck } from '../../controllers/pingController'
 
-v1Router.get("/ping", pingCheck);
+const v1Router = express.Router()
 
-export default v1Router;
+v1Router.get('/ping', pingCheck)
+
+export default v1Router

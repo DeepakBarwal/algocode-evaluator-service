@@ -8,17 +8,27 @@
     "prestart": "npm run build",
     "start": "npx nodemon dist/index.js",
     "dev": "npx concurrently --kill-others \"npm run watch\" \"npm start\"",
-    "lint": "npx eslint ./src/**/*.ts",
-    "format": "npx eslint ./src/**/*.ts --fix"
+    "format:check": "prettier . --check",
+    "format:fix": "prettier . --write",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "keywords": [],
   "author": "Deepak Barwal",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@types/eslint__js": "^8.42.3",
     "@types/express": "^5.0.0",
+    "@types/node": "^22.7.9",
+    "eslint": "^9.13.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
     "nodemon": "^3.1.7",
-    "typescript": "^5.6.3"
+    "prettier": "3.3.3",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.11.0"
   },
   "dependencies": {
     "concurrently": "^9.0.1",
