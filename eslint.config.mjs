@@ -29,7 +29,8 @@ export default tseslint.config(
     rules: {
       'no-console': 'warn',
       'simple-import-sort/imports': 'warn',
-      'simple-import-sort/exports': 'warn'
+      'simple-import-sort/exports': 'warn',
+      '@typescript-eslint/require-await': 'warn'
     }
   }
 )
